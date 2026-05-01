@@ -7,8 +7,9 @@ import Fargona from "./components/Fargona";
 
 function App() {
   const [tabValue, setTabValue] = useState(1);
-  function handleChange(e:SyntheticEvent, newValue: number) {
+  function handleChange(e: SyntheticEvent, newValue: number) {
     setTabValue(newValue);
+    console.log(e);
   }
   return (
     <>
